@@ -70,8 +70,13 @@ export const Header: React.FC<HeaderProps> = ({ }) => {
                         "cabelo",
                         "ver todos",
                     ]}
+                    location="/products/cleaners"
                 />
-                <Menu name="por tipo de pele" menus={["todos os tipos", "pele mista", "pele seca", "pele sensível", "pele oleosa", "ver todos"]} />
+                <Menu
+                    name="por tipo de pele"
+                    menus={["todos os tipos", "pele mista", "pele seca", "pele sensível", "pele oleosa", "ver todos"]}
+                    location="/products/oiled_skin"
+                />
                 <Menu name="por necessidades" menus={["acne", "cravos", "olheiras", "rugas", "ressecamento"]} />
                 <Menu
                     name="por ingredientes"

@@ -15,7 +15,7 @@ export const ProductComponent: React.FC<ProductComponentProps> = ({ product }) =
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
-            <img src={`Id ${product.id}.1.webp`} style={{ width: "100%", height: "22vw", objectFit: "fill" }} />
+            <img src={`/Id ${product.id}.1.webp`} style={{ width: "100%", height: "22vw", objectFit: "fill" }} />
             {product.new ? (
                 <Box
                     sx={{
