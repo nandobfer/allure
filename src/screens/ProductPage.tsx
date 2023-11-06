@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 import { Images } from "../components/Images"
 import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown"
 import BrokenImageIcon from "@mui/icons-material/BrokenImage"
+import { ProductData } from "../components/ProductData"
 
 interface ProductPageProps {}
 
@@ -31,10 +32,10 @@ export const ProductPage: React.FC<ProductPageProps> = ({}) => {
     }, [product])
 
     return product ? (
-        <Box sx={{ flexDirection: "column" }}>
+        <Box sx={{ flexDirection: "column", overflowY: "hidden" }}>
             <Header />
 
-            <Box sx={{ padding: "15vw 3vw 3vw", gap: "1vw" }}>
+            <Box sx={{ padding: "13vw 3vw 3vw", gap: "1vw" }}>
                 <Images product={product} setCurrentImage={setCurrentImage} />
 
                 <Box
@@ -69,6 +70,8 @@ export const ProductPage: React.FC<ProductPageProps> = ({}) => {
                         <ExpandCircleDownIcon sx={{ rotate: "-90deg", color: "#fff" }} />
                     </IconButton>
                 </Box>
+
+                <ProductData product={product} />
             </Box>
         </Box>
     ) : (

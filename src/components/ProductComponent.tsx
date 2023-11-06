@@ -34,7 +34,7 @@ export const ProductComponent: React.FC<ProductComponentProps> = ({ product }) =
                     novidade
                 </Box>
             ) : (
-                <Rating value={4} />
+                <Rating value={4.5} precision={0.5} />
             )}
             <p style={{ fontSize: "1.5vw", color: hovered ? colors.primary : "" }}>{product.name}</p>
             <p style={{ fontSize: "1vw", color: "grey" }}>{product.description}</p>
