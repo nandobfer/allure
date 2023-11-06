@@ -31,7 +31,7 @@ export const Header: React.FC<HeaderProps> = ({ }) => {
                     </Button>
                 </Box>
 
-                <Logo sx={{ justifyContent: "center", width: "10vw" }} />
+                <Logo sx={{ justifyContent: "center", width: "10vw", cursor: "pointer" }} />
 
                 <Box sx={{ gap: "2vw", flex: 1, justifyContent: "flex-end" }}>
                     <Button sx={buttonStyle} color="secondary" variant="outlined">
@@ -51,7 +51,11 @@ export const Header: React.FC<HeaderProps> = ({ }) => {
                     justifyContent: "space-between",
                 }}
             >
-                <Menu name="kits incríveis" menus={["por rotinas", "por necessidades", "por ingredientes", "para presentear", "ver todos"]} />
+                <Menu
+                    name="kits incríveis"
+                    menus={["por rotinas", "por necessidades", "por ingredientes", "para presentear", "ver todos"]}
+                    location="/products/kits"
+                />
                 <Menu
                     name="por categoria"
                     menus={[

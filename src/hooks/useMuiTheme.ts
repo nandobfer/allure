@@ -4,7 +4,7 @@ import colors from "../style/colors"
 export const useMuiTheme = () => {
     const THEME = createTheme({
         typography: {
-            fontFamily: ["Montserrat", "Futura Medium BT"].join(","),
+            fontFamily: ["Tilda"].join(","),
         },
         palette: {
             primary: {
@@ -13,7 +13,6 @@ export const useMuiTheme = () => {
             secondary: {
                 main: colors.secondary,
             },
-
         },
     })
 
