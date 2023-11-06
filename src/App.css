@@ -1,7 +1,7 @@
 
 @font-face {
-    font-family: Montserrat;
-    src: url("/fonts/Montserrat-Regular.ttf") ;
+    font-family: Tilda;
+    src: url("/fonts/tilda-sans_medium.ttf") ;
 }
 
 /* @font-face {
@@ -11,8 +11,8 @@
 } */
 
 @font-face {
-    font-family: Montserrat;
-    src: url("/fonts/Montserrat-Bold.ttf") ;
+    font-family: Tilda;
+    src: url("/fonts/tilda-sans_semibold.ttf") ;
     font-weight: bold;
 }
 
@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: Tilda;
     /* user-select: none; */
 }
 
