@@ -21,11 +21,11 @@ export const Images: React.FC<ImagesProps> = ({ product, setCurrentImage }) => {
                         variant="square"
                         src={src}
                         sx={{
-                            width: "5vw",
-                            height: "5vw",
+                            width: "7vw",
+                            height: "7vw",
                             cursor: "pointer",
                             bgcolor: "primary.main",
-                            // borderRadius: "2vw",
+                            borderRadius: "1.5vw",
                         }}
                         onClick={() => setCurrentImage(index)}
                     >
