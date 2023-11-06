@@ -1,12 +1,15 @@
 import React, { useState } from "react"
-import { Avatar, Box, Rating } from "@mui/material"
+import { Box, Rating } from "@mui/material"
 import colors from "../style/colors"
+import { useNavigate } from "react-router-dom"
 
 interface ProductComponentProps {
     product: Product
 }
 
 export const ProductComponent: React.FC<ProductComponentProps> = ({ product }) => {
+    const navigate = useNavigate()
+
     const [hovered, setHovered] = useState(false)
 
     return (
@@ -14,6 +17,7 @@ export const ProductComponent: React.FC<ProductComponentProps> = ({ product }) =
             sx={{ flexDirection: "column", width: "22vw", gap: "0.5vw", paddingBottom: "3vw", height: "35vw", cursor: "pointer" }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
+            onClick={() => navigate("/product", { state: { product } })}
         >
             <img src={`/Id ${product.id}.1.webp`} style={{ width: "100%", height: "22vw", objectFit: "fill" }} />
             {product.new ? (

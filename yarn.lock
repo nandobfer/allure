@@ -776,6 +776,11 @@ braces@^3.0.2:
   dependencies:
     fill-range "^7.0.1"
 
+burgos-array@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/burgos-array/-/burgos-array-1.0.2.tgz#c0531601b9d3c2539f45dee58c9656afac4c9ee2"
+  integrity sha512-K7oU+yClg+gcUrfFncdSuZ7TYrk/8buRW1+eWq7rmCNtbXdVwPXHTP9eOb9wlJWFmV1Nt6w19mcxb6bzXIQQtg==
+
 callsites@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
