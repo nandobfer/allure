@@ -23,6 +23,7 @@ export const Menu: React.FC<MenuProps> = ({ name, menus }) => {
                 </Paper>
             }
             slotProps={{ tooltip: { sx: { bgcolor: "transparent" } } }}
+            placement="bottom"
         >
             <Button
                 // onMouseEnter={handleClick}
