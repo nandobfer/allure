@@ -43,8 +43,8 @@ export const ProductPage: React.FC<ProductPageProps> = ({}) => {
                         position: "relative",
                         justifyContent: "space-between",
                         alignItems: "center",
-                        width: "35vw",
-                        height: "35vw",
+                        width: "30vw",
+                        height: "30vw",
                         padding: "1vw",
                     }}
                 >
@@ -55,8 +55,8 @@ export const ProductPage: React.FC<ProductPageProps> = ({}) => {
                             position: "absolute",
                             top: 0,
                             left: 0,
-                            width: "35vw",
-                            height: "35vw",
+                            width: "30vw",
+                            height: "30vw",
                             // bgcolor: "primary.main",
                             borderRadius: "2vw",
                         }}

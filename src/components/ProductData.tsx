@@ -5,6 +5,7 @@ import colors from "../style/colors"
 import { Buy } from "./Buy"
 import { Tabs } from "./Tabs"
 import { HowUse } from "./HowUse"
+import { PayWith } from "./PayWith"
 
 interface ProductDataProps {
     product: Product
@@ -19,9 +20,18 @@ const WhatDo: React.FC<{ description: string }> = ({ description }) => {
     )
 }
 
+const Icon: React.FC<{ text: string; src: string }> = ({ text, src }) => {
+    return (
+        <Box sx={{ flexDirection: "column", color: "#727272", width: "5vw", alignItems: "center", textAlign: "center", gap: "1vw" }}>
+            <img src={src} style={{ width: "3vw", height: "3vw" }} />
+            {text}
+        </Box>
+    )
+}
+
 export const ProductData: React.FC<ProductDataProps> = ({ product }) => {
     return (
-        <Box sx={{ flexDirection: "column", height: "40vw", overflowY: "auto", marginLeft: "3vw", gap: "1vw", width: "45vw" }}>
+        <Box sx={{ flexDirection: "column", height: "40vw", overflowY: "auto", marginLeft: "3vw", gap: "1vw", width: "45vw", paddingBottom: "10vw" }}>
             <Box sx={{ gap: "1vw", fontSize: "1.7vw", alignItems: "center" }}>
                 {product.name}
                 <Box sx={{ fontSize: "0.7vw", bgcolor: colors.terciary, padding: "0.3vw 0.6vw", borderRadius: "0.3vw" }}>200ml</Box>
@@ -66,7 +76,16 @@ export const ProductData: React.FC<ProductDataProps> = ({ product }) => {
 
             <Buy />
             <Tabs />
+
+            <Box sx={{ width: "100%", justifyContent: "space-between", padding: "1vw 1vw" }}>
+                <Icon text="vegano" src="/icone 1.webp" />
+                <Icon text="sem crueldade" src="/icone 2.webp" />
+                <Icon text="dermatologicamente testado" src="/icone 3.webp" />
+                <Icon text="recliclável" src="/icone 4.webp" />
+            </Box>
+
             <HowUse />
+            <PayWith />
         </Box>
     )
 }

@@ -33,13 +33,14 @@ export const Tabs: React.FC<TabsProps> = ({}) => {
                 )}
                 {currentTab == 2 && (
                     <>
-                        <Tag name="não sei" />
-                        <Tag name="blabla" />
+                        <Tag name="químico" />
+                        <Tag name="cosmético" />
+                        <Tag name="produto para face" />
                     </>
                 )}
                 {currentTab == 3 && (
                     <>
-                        <Tag name="nota 10" />
+                        <Tag name="uma pele fascinante" />
                     </>
                 )}
             </Box>
