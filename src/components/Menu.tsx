@@ -19,31 +19,36 @@ export const Menu: React.FC<MenuProps> = ({ name, menus }) => {
       };
       
     return (
-        <Box sx={{flex: 1}}>
+        <Box sx={{ flex: 1 }}>
             <Button
-        onMouseEnter={handleClick}
-        // onMouseLeave={handleClose}
-        sx={{
-            borderBottom: '3px solid',
-            borderColor:  open ? 'primary.main' : 'white',
-            fontWeight: open ? 'bold' : '',
-        }}
-      >
-        <p style={{color: 'black'}}>{name}</p>
-      </Button>
-            <ReactMenu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-                'aria-labelledby': 'basic-button',
-                onMouseLeave: handleClose
-            }}
-            // elevation={0}
+                // onMouseEnter={handleClick}
+                // onMouseLeave={handleClose}
+                onClick={handleClick}
+                sx={{
+                    borderBottom: "3px solid",
+                    borderColor: open ? "primary.main" : "white",
+                    fontWeight: open ? "bold" : "",
+                }}
             >
-                {menus.map(menu => <MenuItem key={menu} onClick={handleClose}>{menu}</MenuItem>)}
-                  </ReactMenu>
+                <p style={{ color: "black" }}>{name}</p>
+            </Button>
+            <ReactMenu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                MenuListProps={{
+                    "aria-labelledby": "basic-button",
+                    onMouseLeave: handleClose,
+                }}
+                // elevation={0}
+            >
+                {menus.map((menu) => (
+                    <MenuItem key={menu} onClick={handleClose}>
+                        {menu}
+                    </MenuItem>
+                ))}
+            </ReactMenu>
         </Box>
     )
 }
